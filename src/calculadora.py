@@ -21,6 +21,9 @@ def calcular(numero1, numero2, operacion):
         case '%':
             #operacion moldulo
             respuesta = numero1 % numero2
+        case 'Z':
+            #operacion raiz
+            respuesta = numero1**(1/numero2)
         case _:
             raise ValueError("Operación inválida.")
 
